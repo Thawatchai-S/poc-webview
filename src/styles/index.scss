@@ -1,0 +1,90 @@
+@use './font' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: NotoSansThai;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pin-input {
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    color: black !important;
+    width: 60px;
+}
+
+.pin-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.content {
+    background-color: #f4f5f8;
+    display: flex;
+    justify-content: center;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 500px;
+}
+
+.ion-loading.custom-loading::part(backdrop) {
+    background: transparent !important;
+    /* removes dim background */
+}
+
+.ion-loading.custom-loading::part(wrapper) {
+    box-shadow: none !important;
+    background: transparent !important;
+    /* makes loading box transparent */
+}
+.loading-wrapper.sc-ion-loading-md {
+    border-radius: 2px;
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+.loading-wrapper.sc-ion-loading-md {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+    width: var(--width);
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    height: var(--height);
+    min-height: var(--min-height);
+    max-height: var(--max-height);
+    background: unset !important; 
+    opacity: 0;
+    z-index: 10;
+}
